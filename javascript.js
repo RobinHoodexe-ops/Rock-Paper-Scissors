@@ -60,7 +60,13 @@ function playRound(humanChoice,computerChoice){
     
 }
 
-let game = playRound(hChoice,compChoice);
+let game;
+
+if(humanScore || computerScore < 5 ){
+    
+ game = playRound(hChoice,compChoice);
+
+}
 
 
 console.log(hChoice);
